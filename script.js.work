@@ -1,0 +1,55 @@
+$( document ).ready(function() { 
+
+running=0;
+queue=0;
+err=0;
+
+var queues = [];
+var queuescount=[];
+$.getJSON( "queues.json", function( jdt ) {
+//alert("....."+jdt);
+  $.each( jdt, function( key, val ) {
+//alert(val);
+    queues.push(val);
+    queuescount.push(0);
+  });
+}).done(function() {
+    console.log( "second success" );
+
+$('#main tr').each(function() {
+data=$.trim($(this).children("td:nth-child(4)").text());
+//alert(data);
+if(data == 'R'){
+running=running+1;
+}
+if(data == 'Q'){
+queue=queue+1;
+}
+if(data == 'E'){
+err=err+1;
+}
+
+data1=$.trim($(this).children("td:nth-child(5)").text());
+
+for ( var i =0 ;i < queues.length ;i++){
+if (queues[i] == data1) { queuescount[i]=queuescount[i]+1; }
+}
+
+});
+
+out1='<table><thead><tr><th>State</th><th>Count</th></tr></thead><tr><td>Running</td><td>'+running+'</td></tr><tr><td>Queue</td><td>'+queue+'</td></tr><tr><td>Error</td><td>'+err+'</td></tr></table>';
+
+out2='<table><thead><tr><th>Queue</th><th>Count</th></tr></thead>';
+//alert(queues.length);
+for ( var i =0 ;i < queues.length ;i++){
+out2=out2+'<tr><td>'+queues[i]+'</td><td>'+queuescount[i]+'</td></tr>'
+}
+out2=out2+'</table>';
+
+$('div.left div.res').html(out1+out2);
+
+
+});
+
+});
+

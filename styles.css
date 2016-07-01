@@ -1,0 +1,136 @@
+/* Layout CSS */
+.content{
+width:100%;
+min-width:1300px;
+height:auto;
+}
+.content .header{
+width:100%;
+height:100px;
+}
+.content .header h1{
+padding-top:20px;
+text-align:center;
+}
+.content .header span.time {
+position: absolute;
+top: 0px;
+right: 0px;
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+padding: 0px 0px 6px 0px;
+font-weight: bold;
+}
+.content .center {
+}
+.content .center .left {
+width:100%;
+float:left;
+}
+.content .center .left .restable{
+float:left;
+margin: 0px 10px;
+}
+.content .center .right{
+width:100%;
+float:right;
+margin: 10px 0px;
+}
+.content .footer{
+width:100%;
+height:100px;
+float:left;
+}
+.content .footer h3{
+text-align:center;
+margin: 15px 0px;
+}
+
+
+/* Font CSS  */
+.header h1 {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 51px;
+line-height: 44px;
+letter-spacing: -2px;
+font-weight: bold;
+}
+h2 {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 31px;
+line-height: 44px;
+letter-spacing: -2px;
+font-weight: bold;
+}
+h3 {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 21px;
+line-height: 44px;
+letter-spacing: -2px;
+font-weight: bold;
+}
+span .note {
+float:left;
+widht:100%;
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+padding: 0px 0px 6px 0px;
+font-weight: bold;
+}
+
+/* Table CSS */
+
+table {
+font-family: 'Arial';
+margin: auto;
+border-collapse: collapse;
+border: 1px solid #eee;
+border-bottom: 2px solid #00cccc;
+box-shadow: 0px 0px 20px rgba(0,0,0,0.10),0px 10px 20px rgba(0,0,0,0.05),0px 20px 20px rgba(0,0,0,0.05),0px 30px 20px rgba(0,0,0,0.05);
+}
+th {
+background: #00cccc;
+color: #fff;
+text-transform: uppercase;
+font-size: 15px;
+}
+th, td {
+border: 1px solid #eee;
+padding: 12px 35px;
+border-collapse: collapse;
+}
+
+/* Div Buttons */
+#buttons {
+display: block;
+height:50px;
+cursor:pointer;
+}
+#buttons span{
+padding:15px 15px;
+margin: 0px 10px;
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+font-weight: bold;
+}
+
+#buttons span.run {
+background:#00ccff;
+}
+
+#buttons span.que {
+background:#00cc00;
+}
+
+#buttons span.err {
+background:#00cc88;
+}

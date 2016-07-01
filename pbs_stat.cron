@@ -1,0 +1,3 @@
+PATH=/opt/pbs/default/bin:/sbin:/bin:/usr/sbin:/usr/bin
+MAILTO=root@localhost
+00-59/3 * * * * root /var/www/html/pbs_stat/pbs_stat.sh > /tmp/cron_pbs_stat.log 2>&1
