@@ -1,4 +1,6 @@
 {
-"queue":{"1":"bnormal"},
-"state":{"1":"R","2":"Q","3":"E"}
+"queue":{"1":"work"},
+"qcomment":"* : Queues",
+"scomment":"* : R - Running, Q - Waiting state ,E - Error state, H - Hold State",
+"state":{"1":"R","2":"Q","3":"E","4":"H"}
 }

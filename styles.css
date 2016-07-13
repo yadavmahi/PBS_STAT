@@ -18,7 +18,7 @@ top: 0px;
 right: 0px;
 font-family: times, Times New Roman, times-roman, georgia, serif;
 color: #444;
-padding: 0px 0px 6px 0px;
+padding: 20px;
 font-weight: bold;
 }
 .content .center {
@@ -26,12 +26,14 @@ font-weight: bold;
 .content .center .left {
 width:100%;
 float:left;
+margin-bottom:30px;
 }
 .content .center .left .restable{
 float:left;
 margin: 0px 10px;
 }
 .content .center .right{
+display:block;
 width:100%;
 float:right;
 margin: 10px 0px;
@@ -109,28 +111,102 @@ padding: 12px 35px;
 border-collapse: collapse;
 }
 
-/* Div Buttons */
-#buttons {
-display: block;
-height:50px;
-cursor:pointer;
-}
-#buttons span{
-padding:15px 15px;
-margin: 0px 10px;
+
+/* Div Right res */
+div.right div.res span{
 font-family: times, Times New Roman, times-roman, georgia, serif;
 color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 25px;
+line-height: 44px;
+letter-spacing: -2px;
+}
+
+/* Div Buttons */
+td.bt {
+cursor:pointer;
+font-weight:bold;
+}
+td.bt1 {
+cursor:pointer;
+font-weight:bold;
+}
+
+/* tabs */
+div.tabs{
+width:100%;
+display:block;
+}
+div.tabs span{
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #fff;
+background: #444;
+margin: 10px;
+padding: 10px;
+font-size: 30px;
+line-height: 44px;
+cursor:pointer;
+}
+
+/* table css */
+div.dmain1{
+display:block;
+margin:30px 0px;
+}
+div.dmain1 table{
+margin: 0px 10px;
+float:left;
+}
+div.dmain2{
+display:block;
+margin:30px 0px;
+}
+div.dmain2 table{
+margin: 0px 10px;
+float:left;
+}
+
+table.restable{
+width:300px;
+}
+
+/* Search Text */
+div.res{
+display:block;
+width:100%;
+}
+div.search{
+text-align:right;
+display : block;
+width:100%;
+margin-top: 30px;
+}
+div.search span {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 25px;
+line-height: 44px;
+letter-spacing: -2px;
 font-weight: bold;
 }
-
-#buttons span.run {
-background:#00ccff;
+div.search select {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 20px;
+line-height: 44px;
+height:50px;
 }
-
-#buttons span.que {
-background:#00cc00;
-}
-
-#buttons span.err {
-background:#00cc88;
+div.search input {
+font-family: times, Times New Roman, times-roman, georgia, serif;
+color: #444;
+margin: 0;
+padding: 0px 0px 6px 0px;
+font-size: 20px;
+line-height: 44px;
+height:50px;
 }
