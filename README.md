@@ -41,7 +41,7 @@ Edit data.json, Provide Queue's Information and Running states
 
 	{
 
-	"queue":{"1":"bnormal"},
+	"queue":{"1":"work"},
 
 	"state":{"1":"R","2":"Q","3":"E"}
 
