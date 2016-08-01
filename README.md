@@ -58,5 +58,5 @@ Now check command pbs_stat.sh for generating index.html file
 	./pbs_stat.sh
 
 
-Now open in browser : http://localhsot/pbs_stat
+Now open in browser : http://localhost/pbs_stat
 
