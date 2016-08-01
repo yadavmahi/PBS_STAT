@@ -42,9 +42,13 @@ Edit data.json, Provide Queue's Information and Running states
 	{
 
 	"queue":{"1":"work"},
-
-	"state":{"1":"R","2":"Q","3":"E"}
-
+	
+	"qcomment":"* : Queues",
+	
+	"state":{"1":"R","2":"Q","3":"E","4":"H"},
+	
+	"scomment":"* : R - Running, Q - Waiting state ,E - Error state, H - Hold State"
+	
 	}
 
 
